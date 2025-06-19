@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: grid;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 100px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Thông tin đăng ký</h1>
+    <form action="#" , method="post">
+        <div class="form-group">
+            <label for="name">Tên của bạn:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+        </div><br>
+        <div class="form-group">
+            <label for="name">Số điện thoại</label>
+            <input type="text" id="Sodienthoai" name="Sodienthoai" placeholder="Nhập số điện thoại" required>
+        </div> <br>
+        <div class="form-group">
+            <label for="name">Email</label>
+            <input type="text" id="email" name="email" placeholder="Nhập Email" required>
+        </div> <br>
+        <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Nữ</label>
+        </div>
+        <div>
+            <input type="submit" value="Gửi">
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>
