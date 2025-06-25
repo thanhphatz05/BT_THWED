@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Đơn Giản</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Canh giữa theo chiều ngang */
+            align-items: center; /* Canh giữa theo chiều dọc */
+            min-height: 100vh; /* Chiều cao tối thiểu của trang */
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center; /* Đảm bảo menu nằm giữa */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block; /* Các mục menu trên cùng một hàng */
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Bỏ gạch chân mặc định */
+            color: white; /* Màu chữ trắng */
+            padding: 5px 10px;
+            transition: color 0.3s; /* Tạo hiệu ứng chuyển đổi mượt mà */
+        }
+
+        nav ul li a:hover {
+            color: yellow; /* Đổi màu thành vàng khi rê chuột */
+        }
+
+        nav ul li a:active {
+            text-decoration: underline; /* Gạch chân khi nhấn */
+            color: lightgreen; /* Đổi màu khi nhấn */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://lienquan.garena.vn/">Trang Chủ</a></li>
+            <li><a href="https://lienquan.garena.vn/tin-tuc/">Tin tức</a></li>
+            <li><a href="https://lienquan.garena.vn/hop-tac/">Hợp tác</a></li>
+            <li><a href="https://lienquan.garena.vn/hoc-vien/tuong-skin/">GamePlay</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
