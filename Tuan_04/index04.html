@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4: Tính Tổng</title>
+</head>
+
+<body>
+    <input type="text" id="num1Input" placeholder="Nhập số thứ nhất">
+    <input type="text" id="num2Input" placeholder="Nhập số thứ hai">
+    <button onclick="calculateSum()">Tính Tổng</button>
+    <p id="sumOutputWeb"></p>
+
+    <script>
+        function calculateSum() {
+            const num1Str = document.getElementById('num1Input').value.trim();
+            const num2Str = document.getElementById('num2Input').value.trim();
+            const outputWeb = document.getElementById('sumOutputWeb');
+
+            const num1 = parseFloat(num1Str);
+            const num2 = parseFloat(num2Str);
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                const sum = num1 + num2;
+                console.log(`Tổng của ${num1} và ${num2} là: ${sum}`);
+                outputWeb.textContent = `Tổng của ${num1} và ${num2} là: ${sum}`;
+            } else {
+                console.log("Vui lòng nhập cả hai số hợp lệ.");
+                outputWeb.textContent = "Vui lòng nhập cả hai số hợp lệ.";
+            }
+        }
+    </script>
+</body>
+
+</html>
