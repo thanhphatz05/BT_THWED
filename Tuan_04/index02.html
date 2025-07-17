@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2: Chào Web</title>
+</head>
+
+<body>
+    <input type="text" id="nameInput2" placeholder="Nhập tên của bạn">
+    <button onclick="greetWeb()">Chào Web</button>
+    <p id="greetingOutput2"></p>
+
+    <script>
+        function greetWeb() {
+            const name = document.getElementById('nameInput2').value.trim();
+            const outputElement = document.getElementById('greetingOutput2');
+            if (name) {
+                outputElement.textContent = `Hello ${name}`;
+            } else {
+                outputElement.tabIndex = `Vui lòng nhập tên`
+            }
+        }
+    </script>
+</body>
+
+</html>
