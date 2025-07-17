@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3: Chào Web Nâng Cao</title>
+</head>
+
+<body>
+    <input type="text" id="nameInput3" placeholder="Nhập tên hoặc số">
+    <button onclick="checkInputType()">Kiểm tra Input</button>
+    <p id="output3"></p>
+
+    <script>
+        function checkInputType() {
+            const input = document.getElementById('nameInput3').value.trim();
+            const outputElement = document.getElementById('output3');
+
+            if (input === '') {
+                outputElement.textContent = "Bạn chưa nhập gì cả!";
+            } else if (!isNaN(input) && input !== '') { // Kiểm tra input có thể chuyển đổi thành số và không rỗng
+                outputElement.textContent = `Bạn mới vừa nhập số: ${input}`;
+            } else {
+                outputElement.textContent = `Bạn mới vừa nhập text: ${input}`;
+            }
+        }
+    </script>
+</body>
+
+</html>
